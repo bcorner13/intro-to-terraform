@@ -1,3 +1,6 @@
-output "public_ip" {
-  value = "${aws_instance.example.public_ip}"
+output "private_ip" {
+  value = "${aws_instance.classroom.private_ip}"
+}
+output "name" {
+  value = "${aws_instance.classroom.key_name}"
 }
